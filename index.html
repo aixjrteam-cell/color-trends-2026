@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Trend Intelligence — 2026–2031 Cross-Industry Dashboard</title>
+<meta name="description" content="6-year cross-industry color forecast: Home, Fashion, Beauty, Automotive, Design, Food. 504 curated colors from Pantone, WGSN, CMG & 30+ sources.">
+<meta property="og:title" content="Color Trend Intelligence 2026–2031">
+<meta property="og:description" content="Cross-industry color palette forecast. 6 industries × 14 sub-categories × 6 years = 504 colors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',system-ui,sans-serif;background:linear-gradient(165deg,#faf8f4,#f2ede5 50%,#ebe4d9);min-height:100vh;color:#2a2520}
+.sf{font-family:'Instrument Serif',Georgia,serif}
+.mx{max-width:1100px;margin:0 auto;padding:0 20px}
+header{padding:24px 0 12px}
+.bg{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.bg .d{width:8px;height:8px;border-radius:50%;background:#c4a35a}
+.bg span{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#9b9080}
+h1{font-weight:400;font-size:clamp(1.4rem,3.5vw,2rem);line-height:1.15}
+h1 em{color:#8a7f72;font-style:italic}
+.st{margin-top:8px;font-size:12px;color:#9b9080;max-width:600px;line-height:1.5}
+nav{position:sticky;top:0;z-index:30;background:rgba(250,248,244,.9);backdrop-filter:blur(16px);border-bottom:1px solid #e0d8cc;padding:12px 0}
+.nr{display:flex;gap:8px;overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none}.nr::-webkit-scrollbar{display:none}
+.p{padding:8px 14px;border-radius:8px;font-size:12px;font-weight:600;border:none;cursor:pointer;white-space:nowrap;transition:all .2s}
+.p.a{background:#2a2520;color:#F0EDE5;box-shadow:0 2px 10px rgba(42,37,32,.2)}
+.p:not(.a){background:0 0;color:#6b6157;border:1px solid #ddd5c8}
+.p:hover:not(.a){background:#f0ebe3}
+.sp{padding:6px 12px;border-radius:6px;font-size:11px;font-weight:500;border:1px solid #e0d8cc;cursor:pointer;transition:all .2s;background:#fff;color:#6b6157}
+.sp.a{background:#4A3C37;color:#F0EDE5;border-color:#4A3C37}
+.yb{display:flex;border-radius:12px;overflow:hidden;border:1px solid #e0d8cc;margin-bottom:16px}
+.yb button{flex:1;padding:10px 4px;text-align:center;border:none;cursor:pointer;transition:all .2s;border-right:1px solid #e8e2d8;background:#fff;color:#6b6157}
+.yb button:last-child{border-right:none}
+.yb button.a{background:#2a2520;color:#F0EDE5}
+.yb .y{font-size:15px;font-weight:700}
+.yb .e{font-size:7px;opacity:.7;margin-top:2px}
+.c{border-radius:12px;overflow:hidden;border:1px solid #e0d8cc;background:#fff;margin-bottom:16px}
+.cd{background:#2a2520;color:#F0EDE5;border-color:#2a2520}
+.ch{padding:10px 16px;background:#faf8f4;border-bottom:1px solid #e8e2d8;font-size:12px;font-weight:700}
+.cb{padding:16px}
+.ps{display:flex}.ps>div{flex:1;transition:flex .2s;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;position:relative;cursor:default}
+.ps>div:hover{flex:2}.ps>div .l{font-size:7px;font-weight:500;padding:1px 4px;border-radius:3px;opacity:0;transition:opacity .2s;background:rgba(0,0,0,.1)}.ps>div:hover .l{opacity:.9}
+.sg{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:16px}
+@media(max-width:600px){.sg{grid-template-columns:repeat(3,1fr)}}
+.sw{display:flex;flex-direction:column;align-items:center;gap:4px}
+.sb{width:48px;height:48px;border-radius:8px;transition:transform .2s}
+.sw:hover .sb{transform:scale(1.1)}
+.sn{font-size:9px;font-weight:500;color:#4a4038;text-align:center}
+.tr{display:flex;align-items:center;gap:8px;cursor:pointer;padding:6px;border-radius:8px;transition:background .2s}
+.tr:hover,.tr.a{background:#faf8f4}
+.tr .yl{font-size:11px;font-weight:700;width:32px;flex-shrink:0;color:#9b9080}
+.tr.a .yl{color:#2a2520}
+.tr .ts{flex:1;display:flex;border-radius:6px;overflow:hidden;height:28px}
+.tr .ts>div{flex:1}
+.tr .el{font-size:8px;width:100px;text-align:right;flex-shrink:0;color:#9b9080}
+.sc{border-radius:8px;padding:12px;background:rgba(255,255,255,.03);border-left:3px solid}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:700px){.g2,.g3{grid-template-columns:1fr}}
+.ib{border-radius:12px;overflow:hidden;border:1px solid #e0d8cc;background:#fff;margin-bottom:12px}
+.ibh{padding:8px 16px;background:#faf8f4;border-bottom:1px solid #e8e2d8;font-size:12px;font-weight:700}
+.ibb{padding:12px 16px}
+.se{margin-bottom:12px}.se:last-child{margin-bottom:0}
+.sen{font-size:10px;font-weight:500;color:#4a4038;margin-bottom:4px}
+.set{font-size:10px;color:#8a7f72;margin-top:4px;line-height:1.4}
+.cf{width:100%;height:6px;border-radius:3px;background:#e8e2d8;overflow:hidden}
+.cf>div{height:100%;border-radius:3px;transition:width .8s}
+footer{border-top:1px solid #e0d8cc;padding:16px 0;margin-top:20px}
+.fr{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.fs{font-size:8px;color:#bbb;max-width:500px;line-height:1.5}
+.fd{font-size:9px;font-weight:500;color:#c4a35a}
+.sl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#9b9080;margin-bottom:8px}
+.tt{font-size:12px;color:#6b6157;line-height:1.6}
+.db{border-radius:8px;padding:10px 14px;background:#faf8f4;border:1px solid #e8e2d8;margin-top:8px}
+.dl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#c4a35a}
+.dt{font-size:11px;font-weight:500;color:#4a4038;margin-top:2px}
+.ybd{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;background:#2a2520;color:#F0EDE5;margin-right:8px}
+.twb{display:flex;align-items:center;gap:4px;margin-bottom:8px}
+.rw{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+</style>
+</head>
+<body>
+<div class="mx"><header>
+  <div class="bg"><div class="d"></div><span>Cross-Industry Color Intelligence</span></div>
+  <h1 class="sf">6-Year Industry Palette Dashboard<br><em>2026–2031 · All Categories</em></h1>
+  <p class="st">504 curated colors across 6 industries, 14 sub-categories, 6 years. Pantone, WGSN, CMG, PPG, BASF, Heuritech & 30+ forecasters.</p>
+</header></div>
+<nav><div class="mx"><div class="nr" id="nav"></div></div></nav>
+<div class="mx"><main id="app" style="padding:24px 0"></main>
+<footer><div class="fr"><p class="fs">Pantone, WGSN × Coloro, CMG, Benjamin Moore, Sherwin-Williams, PPG, BEHR, AkzoNobel, BASF, Pinterest, Heuritech, C2 Fashion, Fashion Insight Lab, Homes & Gardens, Who What Wear & 30+ sources.</p><p class="fd">March 2026</p></div></footer></div>
+<script>
+const E={"2026":"Color Confidence","2027":"Blue Renaissance","2028":"Terragreen Living","2029":"Adaptive Interiors","2030":"Sensorial Reset","2031":"Living Color"},Y=Object.keys(E),CF={"2026":[100,"Current"],"2027":[92,"Confirmed"],"2028":[75,"High"],"2029":[62,"Moderate"],"2030":[55,"Directional"],"2031":[50,"Strategic"]};
+const D={"Home Furnishing":{i:"🏠",s:{"Paint & Walls":{"2026":{p:[["Cloud Dancer","#F0EDE5"],["Warm Greige","#C4B9A8"],["Teal","#1A6B6A"],["Lavender","#B4A7C7"],["Silhouette","#4A3C37"],["Khaki","#B5A68C"]],t:"Color drenching, warm khakis replace gray, teal accent walls"},"2027":{p:[["Luminous Blue","#3B5BA5"],["Clay Pink","#C9A09B"],["Sage","#8BA888"],["Parchment","#E8E0D0"],["Eggplant","#5B3256"],["Maize","#D4B060"]],t:"Blue hero wall. Clay neutrals. Sage secondary."},"2028":{p:[["Terracotta","#C87850"],["Green","#6B9B68"],["Parchment","#E8E0D0"],["Indigo","#2A3060"],["Mauve","#B898A8"],["Gold","#B89840"]],t:"Terracotta peaks. Green secondary. Indigo replaces navy."},"2029":{p:[["Bio Aqua","#40B8A8"],["Mineral Violet","#7868A0"],["Sand","#D8C8B0"],["Moss Black","#2A3028"],["Glacial Pink","#E0C8D0"],["Amber","#D0A040"]],t:"Aqua replaces teal. Violet enters. Adaptive paint tech."},"2030":{p:[["Sunstone Amber","#D09040"],["Atmosphere Blue","#5080B0"],["Raw Silk","#D8C8A8"],["Berry","#803050"],["Eucalyptus","#70A888"],["Volcanic","#585058"]],t:"Amber dominates. Blue returns. Berry accent."},"2031":{p:[["Living Sage","#789870"],["Vermillion","#D87058"],["Cloud Stone","#D0C8C0"],["Ocean","#284868"],["Peach Dusk","#E0A890"],["Lilac","#C0A8C0"]],t:"Sage permanent foundation. Vermillion energy."}},
+"Upholstery":{"2026":{p:[["Navy","#2C3E6B"],["Sage","#8BA888"],["Burgundy","#722F37"],["Chocolate","#7B5B3A"],["Icy Blue","#B5CBE0"],["Chartreuse","#BFBF3A"]],t:"Navy, burgundy velvet, emerald; bouclé moody"},"2027":{p:[["Navy Teal","#2A4858"],["Meadow","#5A8C5A"],["Plum","#5B3256"],["Clay","#C9A09B"],["Amber","#B89840"],["Pop Pink","#E0608A"]],t:"Green hero sofa. Plum velvet. Clay replaces oat."},"2028":{p:[["Sage Moss","#6B9B68"],["Coral Clay","#D08868"],["Indigo","#2A3060"],["Parchment","#E8E0D0"],["Gold","#B89840"],["Mauve","#B898A8"]],t:"Green dominant sofa. Bio-fabric mainstream."},"2029":{p:[["Aqua","#40B8A8"],["Violet","#7868A0"],["Sand","#D8C8B0"],["Moss","#4A5840"],["Coral","#E88070"],["Amber","#D0A040"]],t:"Smart thermo-responsive fabrics. Aqua+violet."},"2030":{p:[["Amber","#C89040"],["Blue","#5080B0"],["Berry","#803050"],["Raw Silk","#D8C8A8"],["Eucalyptus","#70A888"],["Volcanic","#585058"]],t:"Amber hero sofa. Blue returns. Sensory fabrics."},"2031":{p:[["Sage","#789870"],["Vermillion","#D87058"],["Cloud","#D0C8C0"],["Ocean","#284868"],["Timber","#3A3028"],["Lilac","#C0A8C0"]],t:"Sage default. Timber: new black. Material-origin."}},
+"Bedding":{"2026":{p:[["Misty Blue","#A8C4D4"],["Dusty Rose","#D4A5A5"],["Cocoa","#6B4C3B"],["Wax Paper","#E8DCC8"],["Purple","#8B6AAE"],["Linen","#D5CABC"]],t:"Emotional palette; jacquard, matte velvet"},"2027":{p:[["Blue","#3B5BA5"],["Clay","#C9A09B"],["Meadow","#5A8C5A"],["White","#F0EDE5"],["Lilac","#B8A0C0"],["Maize","#D4B060"]],t:"Blue hero. Lilac enters. Hyper-tactile."},"2028":{p:[["Green","#6B9B68"],["Soft Terra","#D0A080"],["Cream","#F0EDE5"],["Mauve","#C8A8B8"],["Indigo","#2A3060"],["Gold","#C8A850"]],t:"Green mainstream. Temp-responsive premium."},"2029":{p:[["Glacial Pink","#E0C8D0"],["Aqua","#80C8C0"],["Violet","#9888B0"],["Sand","#D8C8B0"],["Amber","#D8B060"],["Moss","#5A6850"]],t:"Temp-adaptive mass market. Glacial pink hero."},"2030":{p:[["Blush Quartz","#E0B8B8"],["Blue","#5080B0"],["Amber","#D09040"],["Raw Silk","#D8C8A8"],["Berry","#903860"],["Eucalyptus","#70A888"]],t:"Blush dominant. Aromatherapy textiles."},"2031":{p:[["Lilac","#C0A8C0"],["Sage","#789870"],["Peach","#E0A890"],["Cloud","#E8E0D8"],["Ocean","#405878"],["Vermillion","#D87058"]],t:"Lilac THE bedroom color. Circular textiles."}},
+"Accents":{"2026":{p:[["Orange","#E87B35"],["Pink","#E0608A"],["Green","#4AE06B"],["Brass","#C4A35A"],["Eggplant","#5B3256"],["Rust","#B85C2A"]],t:"Jewel tones, brass, personality curation"},"2027":{p:[["Orange","#E87B35"],["Pink","#E0608A"],["Blue","#3B5BA5"],["Brass","#C4A35A"],["Green","#4AE06B"],["Clay","#C9A09B"]],t:"Orange THE accent. Blue ceramics. Brass peaks."},"2028":{p:[["Gold","#B89840"],["Coral","#D08868"],["Mauve","#B898A8"],["Terra","#C87850"],["Green","#5A8C5A"],["Indigo","#2A3060"]],t:"Gold hardware peaks. Handmade artisanal."},"2029":{p:[["Amber","#D0A040"],["Coral","#E88070"],["Violet","#7868A0"],["Aqua","#40B8A8"],["Copper","#B87850"],["Moss","#4A5840"]],t:"Copper replaces brass. Responsive color-changing."},"2030":{p:[["Sunstone","#D09040"],["Berry","#803050"],["Blue","#5080B0"],["Copper Rose","#B87868"],["Volcanic","#585058"],["Quartz","#E0B8B8"]],t:"Copper rose. Berry ceramics. Scent-paired."},"2031":{p:[["Vermillion","#D87058"],["Ocean","#284868"],["Lilac","#C0A8C0"],["Peach","#E0A890"],["Timber","#3A3028"],["Sage","#789870"]],t:"Post-metallic: stone, timber. Color=material."}}}},
+"Fashion":{i:"👗",s:{"Womenswear":{"2026":{p:[["Cherry Red","#B22234"],["Cobalt","#2B4BA0"],["Canary","#F0D040"],["Candy Pink","#F0A0B8"],["Wasabi","#B8D830"],["Plum","#5B3256"]],t:"Color clashing. Cherry red. Plum noir."},"2027":{p:[["True Blue","#3B5BA5"],["Pink Cosmos","#E0608A"],["Forest","#3A5840"],["Brown Rice","#8B7860"],["Maize","#D4B060"],["Lilac","#B8A0C0"]],t:"True Blue. Pink Cosmos. Neo-neutral."},"2028":{p:[["Terra","#C87850"],["Green","#6B9B68"],["Indigo","#2A3060"],["Coral","#D08868"],["Mauve","#B898A8"],["Gold","#B89840"]],t:"Terragreen. Craft-first. Natural dye."},"2029":{p:[["Aqua","#40B8A8"],["Violet","#7868A0"],["Coral","#E88070"],["Moss","#4A5840"],["Amber","#D0A040"],["Pink","#E0C8D0"]],t:"Smart textiles. Aqua-violet power combo."},"2030":{p:[["Sunstone","#D09040"],["Blue","#5080B0"],["Berry","#803050"],["Eucalyptus","#70A888"],["Volcanic","#585058"],["Blush","#E0B8B8"]],t:"Amber year. Blue returns. Berry statement."},"2031":{p:[["Sage","#789870"],["Vermillion","#D87058"],["Ocean","#284868"],["Lilac","#C0A8C0"],["Peach","#E0A890"],["Timber","#3A3028"]],t:"Sage staple. Vermillion energy. Material-transparent."}},
+"Menswear":{"2026":{p:[["Chocolate","#5C3D2E"],["Jade","#4A7C59"],["Turquoise","#30A5A8"],["Cinnamon","#8B5A3C"],["Denim","#3A5068"],["Persimmon","#E88050"]],t:"Chocolate +41%. Raw denim. Turquoise."},"2027":{p:[["Blue","#3B5BA5"],["Brown Rice","#8B7860"],["Forest","#3A5840"],["Clay","#C9A09B"],["Maize","#D4B060"],["Russet","#804020"]],t:"Blue tailoring. Earthy browns. Forest suiting."},"2028":{p:[["Terra","#C87850"],["Indigo","#2A3060"],["Sage","#6B9B68"],["Gold","#B89840"],["Mauve","#B898A8"],["Parchment","#E8E0D0"]],t:"Terra outerwear. Indigo tailoring. Sage casual."},"2029":{p:[["Aqua","#40B8A8"],["Violet","#7868A0"],["Amber","#D0A040"],["Moss","#4A5840"],["Sand","#D8C8B0"],["Coral","#E88070"]],t:"Aqua statement. Violet enters. Smart fabrics."},"2030":{p:[["Amber","#C89040"],["Blue","#5080B0"],["Volcanic","#585058"],["Berry","#803050"],["Silk","#D8C8A8"],["Eucalyptus","#70A888"]],t:"Amber new brown. Volcanic new charcoal."},"2031":{p:[["Sage","#789870"],["Vermillion","#D87058"],["Ocean","#284868"],["Timber","#3A3028"],["Cloud","#D0C8C0"],["Peach","#E0A890"]],t:"Sage suiting. Timber replaces black."}}}},
+"Beauty":{i:"💄",s:{"Color Cosmetics":{"2026":{p:[["Soft Pink","#F0B8C8"],["Matcha","#7B9B6B"],["Dark","#2A2025"],["Dusty Rose","#C49090"],["Peach","#F0C8A0"],["Violet","#7B68AE"]],t:"Soft pink & matcha. Cinematic marketing."},"2027":{p:[["Cool Blue","#6B98B8"],["Pink Cosmos","#E0608A"],["Sage","#7B9B6B"],["Peach","#F0C8A0"],["Plum","#5B3256"],["Maize","#D4B060"]],t:"Blue lips/eyes. Pink cheeks. Sage replaces matcha."},"2028":{p:[["Terra Blush","#C87850"],["Green","#6B9B68"],["Coral","#D08868"],["Gold","#B89840"],["Mauve","#B898A8"],["Indigo","#2A3060"]],t:"Earth-tone cosmetics. Bio-pigments."},"2029":{p:[["Aqua","#40B8A8"],["Violet","#7868A0"],["Coral","#E88070"],["Amber","#D0A040"],["Pink","#E0C8D0"],["Moss","#4A5840"]],t:"Iridescent aqua. Color-shifting cosmetics."},"2030":{p:[["Amber","#D09040"],["Berry","#803050"],["Blue","#5080B0"],["Blush","#E0B8B8"],["Eucalyptus","#70A888"],["Volcanic","#585058"]],t:"Amber highlighting. Berry lip era."},"2031":{p:[["Vermillion","#D87058"],["Sage","#789870"],["Lilac","#C0A8C0"],["Ocean","#284868"],["Peach","#E0A890"],["Cloud","#E8E0D8"]],t:"Vermillion lips. Lilac eye era. Bio-pigment."}},
+"Packaging":{"2026":{p:[["Frosted","#D8E0E0"],["Blush","#E8C0C8"],["Green","#2E5E3E"],["Gold","#C4A860"],["Black","#1A1A1A"],["Blue","#5B8BA0"]],t:"Softer pastels. Refillable luxury."},"2027":{p:[["Blue","#3B5BA5"],["Clay","#C9A09B"],["Sage","#7B9B6B"],["Gold","#C4A860"],["Plum","#5B3256"],["Cream","#F0EDE5"]],t:"Blue premium. Sage wellness."},"2028":{p:[["Terra","#C87850"],["Green","#6B9B68"],["Gold","#B89840"],["Cream","#F0EDE5"],["Indigo","#2A3060"],["Coral","#D08868"]],t:"Earth luxury. Regenerative packaging."},"2029":{p:[["Aqua","#40B8A8"],["Violet","#7868A0"],["Sand","#D8C8B0"],["Amber","#D0A040"],["Pink","#E0C8D0"],["Moss","#3A4030"]],t:"Smart labels. AR-enhanced."},"2030":{p:[["Amber","#D09040"],["Berry","#803050"],["Blue","#5080B0"],["Volcanic","#585058"],["Silk","#D8C8A8"],["Quartz","#E0B8B8"]],t:"Sensory packaging. Haptic color."},"2031":{p:[["Sage","#789870"],["Vermillion","#D87058"],["Ocean","#284868"],["Lilac","#C0A8C0"],["Timber","#3A3028"],["Cloud","#D0C8C0"]],t:"Material-transparent. Color=origin."}}}},
+"Automotive":{i:"🚗",s:{"Auto OEM":{"2026":{p:[["Tesseract Blue","#3B5BA5"],["Phygital","#B0A898"],["Brown","#6B5040"],["Safari","#7A8C3A"],["Mauve","#9B8090"],["White","#E8E4DE"]],t:"BASF: emotional gap-filling. Texture premium."},"2027":{p:[["Blue","#3B5BA5"],["Clay Metal","#C9A09B"],["Green Metal","#5A8C5A"],["White","#F0EDE5"],["Gold Pearl","#C4A860"],["Plum","#3A2030"]],t:"Blue EV signature. Clay SUVs. Green eco."},"2028":{p:[["Terra Metal","#C87850"],["Green Pearl","#6B9B68"],["Indigo","#2A3060"],["Gold","#B89840"],["Mauve","#B898A8"],["Cream","#E8E0D0"]],t:"Warm metallics. Bio-coatings."},"2029":{p:[["Aqua Shift","#40B8A8"],["Violet Pearl","#7868A0"],["Amber","#D0A040"],["Sand","#D8C8B0"],["Moss","#3A4030"],["Coral","#E88070"]],t:"Adaptive surfaces. Color-shifting paint."},"2030":{p:[["Amber Gold","#D09040"],["Blue","#4070A0"],["Berry","#803050"],["Volcanic","#585058"],["Eucalyptus","#70A888"],["Silk","#E8E0D0"]],t:"Gold era. Sensory interiors."},"2031":{p:[["Sage Metal","#789870"],["Vermillion","#D87058"],["Ocean","#284868"],["Cloud","#D0C8C0"],["Lilac","#C0A8C0"],["Timber","#3A3028"]],t:"Sage default. Bio-derived paint."}},
+"Consumer Tech":{"2026":{p:[["Silver","#C0C0C0"],["Teal","#1A6B6A"],["Warm Gray","#9B9590"],["Sage","#8BA888"],["Midnight","#2A3040"],["Ivory","#F0EDE5"]],t:"Nature-derived. Gender-inclusive."},"2027":{p:[["Blue","#3B5BA5"],["Clay","#C9A09B"],["Sage","#8BA888"],["Cream","#F0EDE5"],["Gold","#C4A860"],["Plum","#5B3256"]],t:"Blue devices. Gold premium."},"2028":{p:[["Terra","#C87850"],["Green","#6B9B68"],["Indigo","#2A3060"],["Gold","#B89840"],["Mauve","#B898A8"],["Cream","#E8E0D0"]],t:"Earth-tone tech. Bio-plastic."},"2029":{p:[["Aqua","#40B8A8"],["Violet","#7868A0"],["Amber","#D0A040"],["Sand","#D8C8B0"],["Moss","#4A5840"],["Coral","#E88070"]],t:"Color-responsive. Aqua-violet tech."},"2030":{p:[["Amber","#D09040"],["Blue","#5080B0"],["Berry","#803050"],["Volcanic","#585058"],["Silk","#D8C8A8"],["Eucalyptus","#70A888"]],t:"Amber devices. Berry peripherals."},"2031":{p:[["Sage","#789870"],["Vermillion","#D87058"],["Ocean","#284868"],["Lilac","#C0A8C0"],["Timber","#3A3028"],["Cloud","#D0C8C0"]],t:"Sage default. Bio-material."}}}},
+"Design & Brand":{i:"🎨",s:{"Brand Identity":{"2026":{p:[["Cocoa","#4A3020"],["Bone","#F0EDE5"],["Acid","#A8E030"],["Plum","#5B3256"],["Teal","#1A6B6A"],["Brass","#C4A35A"]],t:"Walnut Retro. 3-5 color systems."},"2027":{p:[["Blue","#3B5BA5"],["Clay","#C9A09B"],["Sage","#7B9B6B"],["Gold","#C4A860"],["Plum","#5B3256"],["Cream","#F0EDE5"]],t:"Blue trust. Clay wellness."},"2028":{p:[["Terra","#C87850"],["Green","#6B9B68"],["Indigo","#2A3060"],["Gold","#B89840"],["Mauve","#B898A8"],["Cream","#E8E0D0"]],t:"Earth-heritage. Craft-forward."},"2029":{p:[["Aqua","#40B8A8"],["Violet","#7868A0"],["Sand","#D8C8B0"],["Amber","#D0A040"],["Moss","#4A5840"],["Coral","#E88070"]],t:"Tech-nature hybrid. Adaptive."},"2030":{p:[["Amber","#D09040"],["Blue","#5080B0"],["Berry","#803050"],["Volcanic","#585058"],["Silk","#D8C8A8"],["Quartz","#E0B8B8"]],t:"Warm confidence. Multi-sensory."},"2031":{p:[["Sage","#789870"],["Vermillion","#D87058"],["Ocean","#284868"],["Lilac","#C0A8C0"],["Timber","#3A3028"],["Cloud","#D0C8C0"]],t:"Sage permanence. Material=brand."}},
+"Packaging":{"2026":{p:[["Pink","#D4A0A0"],["Matcha","#7B9B6B"],["Berry","#B83060"],["Saffron","#D4A030"],["Chrome","#A8B0B8"],["Sage","#8BA888"]],t:"Ultra-Clean Industrial. Heritage Etch."},"2027":{p:[["Blue","#3B5BA5"],["Clay","#C9A09B"],["Green","#5A8C5A"],["Gold","#C4A860"],["Plum","#5B3256"],["Cream","#F0EDE5"]],t:"Blue shelf impact. Gold foil."},"2028":{p:[["Terra","#C87850"],["Green","#6B9B68"],["Gold","#B89840"],["Cream","#E8E0D0"],["Indigo","#2A3060"],["Coral","#D08868"]],t:"Heritage craft. Bio-inks."},"2029":{p:[["Aqua","#40B8A8"],["Violet","#7868A0"],["Sand","#D8C8B0"],["Amber","#D0A040"],["Pink","#E0C8D0"],["Moss","#3A4030"]],t:"Smart labels. AR-enhanced."},"2030":{p:[["Amber","#D09040"],["Berry","#803050"],["Blue","#5080B0"],["Volcanic","#585058"],["Silk","#D8C8A8"],["Quartz","#E0B8B8"]],t:"Texture as shelf signal."},"2031":{p:[["Sage","#789870"],["Vermillion","#D87058"],["Ocean","#284868"],["Lilac","#C0A8C0"],["Timber","#3A3028"],["Cloud","#D0C8C0"]],t:"Material-transparent."}}}},
+"Food & Beverage":{i:"🍽️",s:{"Health & Wellness":{"2026":{p:[["Sage","#8BA888"],["Oat","#E8DCC8"],["Blush","#E8C0B8"],["Turmeric","#D4A030"],["Clay","#B08060"],["Blue","#6B98B8"]],t:"FDA ban driving natural colorants."},"2027":{p:[["Green","#5A8C5A"],["Cream","#F0EDE5"],["Blush","#E0A898"],["Blue","#6B98B8"],["Gold","#D4B060"],["Clay","#C9A09B"]],t:"Green dominates wellness."},"2028":{p:[["Sage","#6B9B68"],["Terra","#C87850"],["Cream","#E8E0D0"],["Gold","#B89840"],["Mauve","#B898A8"],["Coral","#D08868"]],t:"Terragreen wellness. Plant-based only."},"2029":{p:[["Aqua","#40B8A8"],["Sand","#D8C8B0"],["Amber","#D0A040"],["Violet","#7868A0"],["Pink","#E0C8D0"],["Moss","#4A5840"]],t:"Functional food colors."},"2030":{p:[["Amber","#D09040"],["Blue","#5080B0"],["Berry","#803050"],["Eucalyptus","#70A888"],["Silk","#D8C8A8"],["Quartz","#E0B8B8"]],t:"Amber energy. Blue calm supplements."},"2031":{p:[["Sage","#789870"],["Vermillion","#D87058"],["Ocean","#284868"],["Peach","#E0A890"],["Cloud","#D0C8C0"],["Lilac","#C0A8C0"]],t:"Sage foundational. Material-transparent."}},
+"Premium Artisan":{"2026":{p:[["Cocoa","#4A3020"],["Copper","#B87850"],["Tomato","#C83028"],["Cream","#F5F0E8"],["Olive","#808050"],["Wine","#722F37"]],t:"Heritage Etch. Anchor+Weapon."},"2027":{p:[["Blue","#3B5BA5"],["Clay","#C9A09B"],["Forest","#3A5840"],["Gold","#C4A860"],["Plum","#5B3256"],["Cream","#F0EDE5"]],t:"Blue premium. Gold craft. Plum spirits."},"2028":{p:[["Terra","#C87850"],["Green","#6B9B68"],["Gold","#B89840"],["Cocoa","#4A3020"],["Indigo","#2A3060"],["Cream","#E8E0D0"]],t:"Terra artisan. Bio-ink. Craft story."},"2029":{p:[["Amber","#D0A040"],["Violet","#7868A0"],["Aqua","#40B8A8"],["Sand","#D8C8B0"],["Coral","#E88070"],["Moss","#4A5840"]],t:"Amber spirits. Violet specialty."},"2030":{p:[["Sunstone","#D09040"],["Berry","#803050"],["Blue","#5080B0"],["Volcanic","#585058"],["Silk","#D8C8A8"],["Copper","#B87868"]],t:"Premium amber. Volcanic textures."},"2031":{p:[["Sage","#789870"],["Vermillion","#D87058"],["Ocean","#284868"],["Timber","#3A3028"],["Cloud","#D0C8C0"],["Peach","#E0A890"]],t:"Sage permanence. Full provenance."}}}}
+};
+const SH=[{y:"2026→27",d:"Teal/earth → Luminous Blue universal hero",p:["#1A6B6A","#3B5BA5"],c:"#3B5BA5"},{y:"2027→28",d:"Blue → Terracotta+Green 'Terragreen'",p:["#3B5BA5","#C87850"],c:"#C87850"},{y:"2028→29",d:"Terra → Aqua+Violet. Purple cycle returns",p:["#C87850","#40B8A8"],c:"#40B8A8"},{y:"2029→30",d:"Aqua → Amber+Blue. Warm-cool rebalance",p:["#40B8A8","#D09040"],c:"#D09040"},{y:"2030→31",d:"Amber → Sage permanence. Green foundational",p:["#D09040","#789870"],c:"#789870"},{y:"Full arc",d:"Gray→Earth→Blue→Terragreen→Adaptive→Sensory→Living",p:["#A0A0A0","#789870"],c:"#c4a35a"}];
+
+let S={m:"industry",i:"Home Furnishing",s:null,y:"2026"};
+const lm=h=>{const r=parseInt(h.slice(1,3),16),g=parseInt(h.slice(3,5),16),b=parseInt(h.slice(5,7),16);return(.299*r+.587*g+.114*b)/255};
+const tx=h=>lm(h)>.55?"#1a1a1a":"#f5f5f5";
+const ps=(p,h)=>`<div class="ps" style="height:${h||56}px">${p.map(c=>`<div style="background:${c[1]};color:${tx(c[1])}"><span class="l">${c[0]}</span></div>`).join('')}</div>`;
+
+function sM(m){S.m=m;document.querySelectorAll('#nav .p').forEach((b,i)=>b.classList.toggle('a',['industry','year','convergence'][i]===m));R();}
+function sI(n){S.i=n;S.s=null;R();}
+function sS(s){S.s=s;R();}
+function sY(y){S.y=y;R();}
+
+function R(){
+const a=document.getElementById('app');
+if(S.m==='industry')rI(a);else if(S.m==='year')rY(a);else rC(a);
+}
+
+function rI(el){
+const id=D[S.i],sk=Object.keys(id.s),as=S.s&&id.s[S.s]?S.s:sk[0],sd=id.s[as],yd=sd[S.y];
+let h=`<div class="rw">${Object.entries(D).map(([n,d])=>`<button class="p ${S.i===n?'a':''}" onclick="sI('${n}')">${d.i} ${n}</button>`).join('')}</div>
+<div class="rw">${sk.map(s=>`<button class="sp ${as===s?'a':''}" onclick="sS('${s}')">${s}</button>`).join('')}</div>
+<div class="yb">${Y.map(y=>`<button class="${S.y===y?'a':''}" onclick="sY('${y}')"><div class="y">${y}</div><div class="e">${E[y]}</div></button>`).join('')}</div>`;
+if(yd){h+=`<div class="c">${ps(yd.p,56)}<div class="cb"><div class="twb"><span class="ybd">${S.y}</span><h3 class="sf" style="font-size:16px">${id.i} ${as}</h3></div><p class="tt">${yd.t}</p><div class="sg">${yd.p.map(c=>`<div class="sw"><div class="sb" style="background:${c[1]};box-shadow:0 3px 12px ${c[1]}30"></div><span class="sn">${c[0]}</span></div>`).join('')}</div></div></div>`;}
+h+=`<div class="c"><div class="cb"><div class="sl">${as} — 6-Year Evolution</div>`;
+Y.forEach(y=>{const d=sd[y];if(!d)return;h+=`<div class="tr ${S.y===y?'a':''}" onclick="sY('${y}')"><span class="yl">${y}</span><div class="ts">${d.p.map(c=>`<div style="background:${c[1]}"></div>`).join('')}</div><span class="el">${E[y]}</span></div>`;});
+h+=`</div></div>`;el.innerHTML=h;}
+
+function rY(el){
+let h=`<div class="yb">${Y.map(y=>`<button class="${S.y===y?'a':''}" onclick="sY('${y}')"><div class="y" style="font-size:18px">${y}</div><div class="e">${E[y]}</div></button>`).join('')}</div>
+<div style="margin-bottom:16px"><h2 class="sf" style="font-size:20px">${S.y} · ${E[S.y]}</h2><p style="font-size:12px;color:#9b9080;margin-top:4px">All industries & sub-categories</p><div style="margin-top:8px;height:1px;background:linear-gradient(to right,#c4a35a80,transparent 60%)"></div></div>`;
+Object.entries(D).forEach(([n,d])=>{h+=`<div class="ib"><div class="ibh">${d.i} ${n}</div><div class="ibb">`;
+Object.entries(d.s).forEach(([sn,sy])=>{const dd=sy[S.y];if(!dd)return;h+=`<div class="se"><div class="sen">${sn}</div>${ps(dd.p,32)}<p class="set">${dd.t}</p></div>`;});
+h+=`</div></div>`;});el.innerHTML=h;}
+
+function rC(el){
+let h=`<div style="margin-bottom:20px"><h2 class="sf" style="font-size:20px">Cross-Industry Convergence</h2><p style="font-size:12px;color:#9b9080;margin-top:4px">Year-by-year universal color movements across all 6 industries</p><div style="margin-top:8px;height:1px;background:linear-gradient(to right,#c4a35a80,transparent 60%)"></div></div>`;
+Y.forEach(y=>{const ac=[];Object.values(D).forEach(d=>Object.values(d.s).forEach(sy=>{const dd=sy[y];if(dd)dd.p.forEach(c=>{if(!ac.find(x=>x[1]===c[1]))ac.push(c);})}));const sm=ac.slice(0,8);const cf=CF[y];
+h+=`<div class="c" style="margin-bottom:12px"><div style="padding:10px 16px;display:flex;align-items:center;justify-content:space-between;${y==='2026'?'background:#2a2520;color:#F0EDE5':'background:#faf8f4'};border-bottom:1px solid #e8e2d8"><div><span class="sf" style="font-size:15px;font-weight:700">${y}</span><span style="font-size:9px;margin-left:8px;${y==='2026'?'color:#c4a35a':'color:#9b9080'}">${E[y]}</span></div><span style="font-size:9px;padding:2px 8px;border-radius:4px;${y==='2026'?'background:#c4a35a;color:#2a2520':'background:#f0ebe3;color:#8a7f72'}">${cf[1]} · ${cf[0]}%</span></div>${ps(sm,48)}<div style="padding:8px 16px;display:flex;flex-wrap:wrap;gap:6px">${Object.entries(D).map(([n,d])=>{const fs=Object.values(d.s)[0];const dd=fs[y];if(!dd)return'';return`<div style="display:flex;align-items:center;gap:4px"><span style="font-size:8px">${d.i}</span><div style="display:flex;border-radius:3px;overflow:hidden;height:12px">${dd.p.slice(0,3).map(c=>`<div style="width:16px;background:${c[1]}"></div>`).join('')}</div></div>`;}).join('')}</div></div>`;});
+h+=`<div class="c cd" style="margin-top:20px"><div class="cb"><h3 class="sf" style="font-size:18px;margin-bottom:16px">Universal Shifts</h3><div class="g3">${SH.map(s=>`<div class="sc" style="border-color:${s.c}"><div style="display:flex;align-items:center;gap:8px"><span style="font-size:9px;font-weight:700;color:${s.c}">${s.y}</span><div style="display:flex;gap:3px">${s.p.map(c=>`<div style="width:14px;height:14px;border-radius:3px;background:${c}"></div>`).join('')}</div></div><p style="font-size:10px;margin-top:6px;color:#c8c0b5;line-height:1.4">${s.d}</p></div>`).join('')}</div></div></div>`;
+h+=`<div class="db" style="margin-top:16px"><div class="dl">Confidence</div><div style="display:flex;gap:12px;margin-top:8px;flex-wrap:wrap">${Y.map(y=>{const c=CF[y];const cl={"2026":"#2a2520","2027":"#3B5BA5","2028":"#C87850","2029":"#40B8A8","2030":"#D09040","2031":"#789870"};return`<div style="flex:1;min-width:70px"><div style="display:flex;justify-content:space-between;font-size:9px;margin-bottom:2px"><span style="color:#4a4038">${y}</span><span style="color:#9b9080">${c[0]}%</span></div><div class="cf"><div style="width:${c[0]}%;background:${cl[y]}"></div></div><span style="font-size:7px;color:#bbb">${c[1]}</span></div>`;}).join('')}</div></div>`;
+el.innerHTML=h;}
+
+// Init nav
+document.getElementById('nav').innerHTML='<button class="p a" onclick="sM(\'industry\')">🏭 By Industry</button><button class="p" onclick="sM(\'year\')">📅 By Year</button><button class="p" onclick="sM(\'convergence\')">🔗 Convergence</button>';
+R();
+</script>
+</body>
+</html>
